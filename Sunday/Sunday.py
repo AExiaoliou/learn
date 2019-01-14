@@ -34,6 +34,8 @@ class Sunday:
                 '''
                 if you need a multiply match
                 just change return to an array
+                but it could match repeatly ,like pattern='aba' str='ababa'
+                if nesserary, array's value also is j - i, but let j + 1 and i revent to head
                 '''
         return None
 
