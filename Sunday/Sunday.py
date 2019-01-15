@@ -22,6 +22,8 @@ class Sunday:
         while j < len(s):
             if s[j] != pattern[i]:
                 j = j - i; i = 0 # let sentinel revent to the head of str and pattern
+                if j + length >= len(s): 
+                    j += length; break
                 if s[j + length] in shift:
                     j += shift[s[j + length]]
                 else:
@@ -40,4 +42,4 @@ class Sunday:
         return -1
 
 searcher = Sunday('abc')
-print(searcher.search('bcabc'))
+print(searcher.search('bcabd'))
