@@ -20,6 +20,7 @@ public class Sunday {
         for (int i = 0, j = 0; i < mainStr.length(); ) {
             if (s.charAt(j) != pattern.charAt(i)) {
                 j = j - i; i = 0;
+                if(j + len >= s.length) break;
                 j += shift.getOrDefault(s.charAt(j + len), len + 1);
             } else {
                 i++; j++;
