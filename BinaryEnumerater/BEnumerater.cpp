@@ -16,7 +16,7 @@ private:
 };
 BEnumerater::BEnumerater(int length) {
 	len = length;
-	poss = len << 1;
+	poss = 1 << len;
 
 	enumer = new bool *[poss];
 	for (int i = 0; i < len; i++)
