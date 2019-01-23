@@ -1,16 +1,3 @@
-#include <iostream>
-#include <algorithm>
-#include <cmath>
-#include <cstdio>
-#include <cctype>
-#include <cstring>
-#include <vector>
-
-#define LL long long
-#define _CRT_SECURE_NO_WARNINGS
-
-using namespace std;
-
 class BEnumerater {
 public:
 	BEnumerater(int length);
