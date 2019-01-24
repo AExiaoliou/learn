@@ -4,6 +4,7 @@ public:
 	~BEnumerater();
 	int length();
 	int possibilitise();
+	bool hasnext();
 	bool* next();
 	bool* last();
 	bool* rnext();
@@ -19,7 +20,7 @@ BEnumerater::BEnumerater(int length) {
 	poss = 1 << len;
 
 	enumer = new bool *[poss];
-	for (int i = 0; i < len; i++)
+	for (int i = 0; i < poss; i++)
 		enumer[i] = new bool[len];
 
 	for (int i = 0; i < poss; i++)
@@ -33,6 +34,7 @@ BEnumerater::~BEnumerater() {
 }
 int BEnumerater::length() { return len; }
 int BEnumerater::possibilitise() { return poss; }
+bool BEnumerater::hasnext() { return sentinel >= 0 && sentinel < poss; }
 bool* BEnumerater::next() { return enumer[sentinel++]; }
 bool* BEnumerater::last() { return enumer[--sentinel]; }
 bool* BEnumerater::rnext() {
@@ -45,11 +47,30 @@ bool* BEnumerater::rlast() {
 }
 
 int main() {
-
+	auto enumer = BEnumerater(4);
+	while (enumer.hasnext()) {
+		auto a = enumer.next();
+		for (int i = 0; i < enumer.length(); i++)
+			printf(a[i] ? "1" : "0");
+		printf("\n");
+	}
 }
-
-
-
-
-
-
+/*
+output:
+0000
+1000
+0100
+1100
+0010
+1010
+0110
+1110
+0001
+1001
+0101
+1101
+0011
+1011
+0111
+1111
+*/
