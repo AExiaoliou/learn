@@ -13,7 +13,7 @@ long qpow(long a, long b) {
 
 //with modder
 long modpow(long a, long b, long modder){
-    mod = modder;
+    long mod = modder;
     long res = 1, base = a % mod;
     while(b){
         if(b&1)  res = res * base % mod
