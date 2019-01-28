@@ -1,0 +1,19 @@
+//input a, b
+//base ver.
+int gcd(int a, int b){
+    while(b != 0)}
+        a = b;
+        b = a % b;
+    }
+    return a;
+}
+
+//recursion ver.
+//Depending on modern compiler, it will not be slow than base ver, and do not worry about the stack depth.
+int gcd(int a, int b){
+    return b == 0 ? a : gcd(b, a % b);
+}
+
+int lcm(int a, int b){
+    return a * b / gcd(a, b);
+}
