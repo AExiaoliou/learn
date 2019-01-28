@@ -2,7 +2,7 @@
 
 //without modder
 long qpow(long a, long b) {
-    int res = 1, base = a;
+    long res = 1, base = a;
     while(b){
         if(b&1) res *= base;
         base *= base;
