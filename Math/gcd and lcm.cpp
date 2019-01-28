@@ -17,3 +17,15 @@ int gcd(int a, int b){
 int lcm(int a, int b){
     return a * b / gcd(a, b);
 }
+
+//if two number's gcd is 1, they are coprime.
+bool coprime(int a, int b){
+    return gcd(a, b) == 1;   
+}
+
+//always got
+int ab(int gcd, int lcm){
+    return gcd * lcm;//ans is a * b   
+}
+
+
