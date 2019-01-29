@@ -6,3 +6,24 @@ procedure add(binary a[], binary b[])
         c := d
     s[n] = c
     return binary s[] {s[n]s[n - 1]...s[0]}
+    
+    
+procedure multiply(binary a[], binary b[])
+    for j := 0 to n - 1
+        if b[j] = 1 then c[j] := a << j
+        else c[j] := 0
+    p := 0
+    for j := 0 to n - 1
+        p := p + c[j]
+    return integer p
+    
+procedure division algorithm(integer a, integer d)
+    q := 0
+    r := |a|
+    while r >= d
+        r := r - d
+        q := q + 1
+    if a < 0 and r > 0 then
+        r := d - r
+        q := -(q + 1)
+    return (q, r) // q = a div d, r = a mod d
