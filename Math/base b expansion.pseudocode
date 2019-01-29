@@ -5,4 +5,4 @@ procedure base b expansion(n, b: integer and b > 1)
         a[k] := q mod b
         q := q div b
         k := k + 1
-    return (a[k - 1]...a[1]a[0]) {a[k - 1]...a[1]a[0]}
+    return binary a[] {a[k - 1]...a[1]a[0]}
