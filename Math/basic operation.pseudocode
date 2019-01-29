@@ -1,0 +1,8 @@
+procedure add(binary a[], binary b[])
+    c := 0
+    for j := 0 to n - 1
+        d := ⌊ (a[j] + b[j] + c) / 2 ⌋
+        s[j] := a[j] + b[j] + c - 2*d
+        c := d
+    s[n] = c
+    return binary s[] {s[n]s[n - 1]...s[0]}
