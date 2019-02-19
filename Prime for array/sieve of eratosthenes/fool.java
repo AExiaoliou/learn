@@ -6,8 +6,8 @@ static int[] easyEratosthenes(int[] a) {
 			a[pi] = i;
 			primes.add(a[pi]);
 			pi += 1;
-			for (int j = 0; (j < pi)  && (i * a[j] < a.length); j++)
-				flags[i * a[j]] = true;
+			for (int j = i; j < a.length; j++)
+				flags[j] = true;
 		}
 	}
 	return primes.stream().mapToInt(Integer::intValue).toArray();
