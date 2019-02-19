@@ -1,1 +1,2 @@
-
+- sieve of eratosthenes only can apply in continuous arrays 
+- If array contain 1 or 0, you had to remove them manually
