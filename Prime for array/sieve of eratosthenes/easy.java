@@ -9,6 +9,8 @@ static int[] easyEratosthenes(int[] a) {
 		}
 		for (int j = 0; j < pi && i * a[j] < a.length; j++) {
 			flags[i * a[j]] = true;
+			if (i % primes[j] == 0) // ensure every prime number only can be removed one time
+				break;
 		}
 	}
 	return primes.stream().mapToInt(Integer::intValue).toArray();
