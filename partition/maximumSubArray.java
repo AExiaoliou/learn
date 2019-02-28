@@ -25,7 +25,7 @@
 			int mid = (high + low) / 2;
 			int[] left = maximumSubArray(a, low, mid);
 			int[] right = maximumSubArray(a, mid, high);
-			int[] cross = calArraySum(a, low, mid, high);
+			int[] cross = calArraySum(a, low, mid, high); // can be optimzed by prefix (but not good at short array)
 			if (left[2] >= right[2] && left[2] >= cross[2] ) return left;
 			else if (right[2] >= left[2] && right[2] >= cross[2]) return right;
 			else return cross;
