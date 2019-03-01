@@ -1,17 +1,14 @@
-static int[] easyEratosthenes(int[] a) {
-	boolean[] flags = new boolean[a.length]; Arrays.fill(flags, false);
-	ArrayList<Integer> primes = new ArrayList<>((int) Math.sqrt(a.length));
-	for (int i = 2, pi = 0; i < a.length; i++) {
-		if (!flags[i]) {
-			a[pi] = i;
-			primes.add(a[pi]);
-			pi += 1;
+	static int[] easyEratosthenes(int[] a) {
+		boolean[] flags = new boolean[a.length]; Arrays.fill(flags, false);
+		ArrayList<Integer> primes = new ArrayList<>((int) Math.sqrt(a.length));
+		for (int i = 0; i < a.length; i++) {
+			if (!flags[i]) if (isPrime(a[i])){
+				primes.add(a[i]);
+				for (int j = 0; (j < i) && (a[i] * primes.get(j) < a.length); j++) {
+					flags[a[i] * primes.get(j)] = true;
+					if (a[i] % primes.get(j) == 0) break;
+				}
+			}
 		}
-		for (int j = 0; j < pi && i * a[j] < a.length; j++) {
-			flags[i * a[j]] = true;
-			if (i % primes[j] == 0) // ensure every prime number only can be removed one time
-				break;
-		}
+		return primes.stream().mapToInt(Integer::intValue).toArray();
 	}
-	return primes.stream().mapToInt(Integer::intValue).toArray();
-}
