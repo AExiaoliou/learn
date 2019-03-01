@@ -21,7 +21,7 @@ bool foolish(int x) {
 
 bool foolishly(int x) {
     if (x == 2 || x == 3) return true;
-    if (x % 6 != 1 ||x % 3 != 5) return false;
+    if (x % 6 != 1 || x % 3 != 5) return false;
     
     int max = (int) sqrt(x);
     for (int i = 5; i <= max; i += 6) {
