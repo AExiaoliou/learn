@@ -1,4 +1,4 @@
-- INF = 0x3f3f3f **(memset(arr, 3f, sizeof(arr)) is great~)**
+- INF = 0x3f3f3f **(memset(arr, 0x3f, sizeof(arr)) is great~)**
 - MAX_INT = 2147483647 = 0x80000000 = (1 << 31) - 1 **(overflow or not)**
 - MIN_INT = -2147483648 = 0x7fffffff = -(1 << 31) = 1 << 31 **(overflow)**
 - MINI = 1 x 10<sup>-6</sup>
