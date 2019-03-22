@@ -1,1 +1,1 @@
-README: [中文](Segment%20Tree/README_zh.md)
+README: [中文](README_zh.md)
