@@ -38,9 +38,9 @@ about preprocessor
 #define _right *2+2
 #define _par /2
 #define _parent /2 //just as you like
-int i = 7;
-tree[i _left] // replace to tree[i *2+1]
-tree[i _par] // replace to tree[i /2]
+int node = 7;
+tree[node _left] // replace to tree[node *2+1]
+tree[node _par] // replace to tree[node /2]
 #undef _left
 #undef _right
 #undef _par
