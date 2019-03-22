@@ -1,5 +1,5 @@
 # 线段树
-线段树是一种[二叉查找树](learn/AVLtree)  
+线段树是一种[二叉查找树](https://github.com/AExiaoliou/learn/AVLtree)
 
 
 
