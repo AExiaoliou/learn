@@ -39,4 +39,8 @@ about preprocessor
 int i = 7;
 tree[i _left] // replace to tree[i *2+1]
 tree[i _par] // replace to tree[i /2]
+#undef _left
+#undef _right
+#undef _par
+#undef _parent
 ```
