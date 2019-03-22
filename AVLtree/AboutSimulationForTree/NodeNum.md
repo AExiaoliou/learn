@@ -29,3 +29,14 @@ and also
 1*2+0           1*2+1
 2*2+0   2*2+1   3+2+0   3*2+1
 </pre>
+
+about preprocessor  
+```cpp
+#define _left *2+1
+#define _right *2+2
+#define _par /2
+#define _parent /2 //just as you like
+int i = 7;
+tree[i _left] // replace to tree[i *2+1]
+tree[i _par] // replace to tree[i /2]
+```
