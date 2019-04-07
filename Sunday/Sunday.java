@@ -1,5 +1,3 @@
-package com.aexiaoliou.algorithm;
-
 import org.jetbrains.annotations.NotNull;
 import java.util.HashMap;
 
