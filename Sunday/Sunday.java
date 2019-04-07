@@ -12,7 +12,7 @@ public class Sunday {
         }
     }
 
-    public int search(String mainStr) {
+    public int search(@NotNull String mainStr) {
         String s = mainStr;
         int len = pattern.length();
         for (int i = 0, j = 0; i < mainStr.length(); ) {
