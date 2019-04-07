@@ -15,7 +15,7 @@ public class Sunday {
     public int search(@NotNull String mainStr) {
         String s = mainStr;
         int len = pattern.length();
-        for (int i = 0, j = 0; i < mainStr.length(); ) {
+        for (int i = 0, j = 0; j < mainStr.length() && i < pattern.length(); ) {
             if (s.charAt(j) != pattern.charAt(i)) {
                 j = j - i; i = 0;
                 if(j + len >= s.length) break;
