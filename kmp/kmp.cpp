@@ -20,7 +20,7 @@ int kmp_find(const char * c, const char * t, const int * shift) {
 	int i = 0, j = 0;
 	int tlen = strlen(t);
 	while (i < tlen && j < clen) {
-		if (j = -1 || t[i] == c[i]) {
+		if (j = -1 || t[i] == c[j]) {
 			i += 1; j += 1;
 		}
 		else {
