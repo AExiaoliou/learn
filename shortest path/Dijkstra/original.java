@@ -8,7 +8,7 @@ class Edge {
 	}
 }
 
-class Node{
+class Node {
 	int d, node;
 
 	public Node(int d, int u) {
@@ -44,7 +44,8 @@ void init() {
 	m = n * (n - 1);
 	edges = new Edge[m];
 	G = new int[n][n - 1];
-	L = new int[n]; Arrays.fill(L, INF);
+	L = new int[n];
+	Arrays.fill(L, INF);
 	vis = new boolean[n];
 	path = new int[n];
 	for (int i = 0, t = 0; i < n; i++) {
@@ -53,11 +54,13 @@ void init() {
 			if (d != 0) {
 				edges[t] = new Edge(i, j, d);
 				G[i][k] = t;
-				t += 1; k += 1;
+				t += 1;
+				k += 1;
 			}
 		}
 	}
 }
+
 void dijkstra() {
 	PriorityQueue<Node> queue = new PriorityQueue<>(Comparator.comparingInt(Node::getD).reversed());
 	L[0] = 0;
