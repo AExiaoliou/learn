@@ -1,3 +1,37 @@
+class Edge {
+	int from, to, dis;
+
+	public Edge(int from, int to, int dis) {
+		this.from = from;
+		this.to = to;
+		this.dis = dis;
+	}
+}
+
+class Node{
+	int d, node;
+
+	public Node(int d, int u) {
+		this.d = d;
+		this.node = u;
+	}
+
+	public int getD() {
+		return d;
+	}
+
+	public void setD(int d) {
+		this.d = d;
+	}
+
+	public int getNode() {
+		return node;
+	}
+
+	public void setNode(int node) {
+		this.node = node;
+	}
+}
 
 int n, m;
 Edge[] edges;
