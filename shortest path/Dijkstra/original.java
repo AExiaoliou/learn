@@ -51,12 +51,10 @@ void init() {
 	for (int i = 0, t = 0; i < n; i++) {
 		for (int j = 0, k = 0; j < n; j++) {
 			int d = cd.nextInt();
-			if (d != 0) {
-				edges[t] = new Edge(i, j, d);
-				G[i][k] = t;
-				t += 1;
-				k += 1;
-			}
+			edges[t] = new Edge(i, j, d);
+			G[i][k] = t;
+			t += 1;
+			k += 1;
 		}
 	}
 }
