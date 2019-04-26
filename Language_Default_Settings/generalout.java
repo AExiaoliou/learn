@@ -1,6 +1,6 @@
 /*
 * System.out is using BufferedWriter to manage output, which could not manage separator
-/*
+*/
 PrintWriter out = new PrintWriter(System.out, true);
 /*
 * If you ignore the second argment 'autoFlush', it will default with false
