@@ -1,0 +1,4 @@
+* segment tree
+* spfa
+* DLX
+* 
