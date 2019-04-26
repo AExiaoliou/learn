@@ -1,2 +1,2 @@
-# There are some algorithm or data structure test  
+# There are some algorithm or data structure learning code
 [TODOS](TODOS.md)
