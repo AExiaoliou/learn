@@ -1,3 +1,9 @@
+/*
+* why FastReader faster than Scanner?
+* Scanner always use long regex to ignore no-match string.
+* for example "edf 10 abc 20" nextInt() will return 10 and ignore edf.
+* FastReader just split input with spaces and separators.
+*/
 class FastReader {
 	private BufferedReader in;
 	private StringTokenizer tokenizer;
