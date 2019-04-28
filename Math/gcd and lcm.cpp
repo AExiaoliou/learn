@@ -9,7 +9,7 @@ int gcd(int a, int b){
 }
 
 //recursion ver.
-//Depending on modern compiler, it will not be slow than base ver, and do not worry about the stack depth.
+//Depending on modern compiler, it will not be slower than base ver, and do not worry about the stack depth.
 int gcd(int a, int b){
     return b == 0 ? a : gcd(b, a % b);
 }
