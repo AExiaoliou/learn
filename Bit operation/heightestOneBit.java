@@ -1,4 +1,4 @@
-//from java.lang.Integer.hightestOneBit()
+
 static int highestOneBit(int i) {
     i |= (i >>  1);
     i |= (i >>  2);
@@ -7,7 +7,7 @@ static int highestOneBit(int i) {
     i |= (i >> 16);
     return i - (i >>> 1);
 }
-//from java.lang.Long.hightestOneBit()
+
 static long highestOneBit(long i) {
     i |= (i >>  1);
     i |= (i >>  2);
