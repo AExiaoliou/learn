@@ -8,7 +8,7 @@ static int highestOneBit(int i) {
     return i - (i >>> 1);
 }
 //from java.lang.Long.hightestOneBit()
-public static long highestOneBit(long i) {
+static long highestOneBit(long i) {
     i |= (i >>  1);
     i |= (i >>  2);
     i |= (i >>  4);
