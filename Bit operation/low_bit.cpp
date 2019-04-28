@@ -23,7 +23,7 @@ bool is2_(int x) {
     return lowbit(x + 1) == x + 1;
 }
 
-//remove last bit 1
+//remove lowest bit 1
 void remove_last_bit1(int & x) {
     x ^= lowbit(x);   
 }
