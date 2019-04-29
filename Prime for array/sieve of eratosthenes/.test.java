@@ -15,7 +15,7 @@ class TaskTest {
 		for (int i = 0; i < testdata.length; i++) testdata[i] = i + 2;
 		long begin = nanoTime();
 		Arrays.stream(YourPackage.foolEratosthenes(testdata))
-				.forEach(System.out::println); // you can remove print to get accurate result
+				.forEach(System.out::println); // you can remove print to get accurate time
 		System.out.println("time = " + (nanoTime() - begin) );
 	}
 }
