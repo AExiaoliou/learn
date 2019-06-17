@@ -5,7 +5,7 @@ procedure add(binary a[], binary b[])
         s[j] := a[j] + b[j] + c - 2*d
         c := d
     s[n] = c
-    return binary s[] {s[n]s[n - 1]...s[0]}
+    return binary s[] { s[n], s[n - 1]... s[0]}
     
     
 procedure multiply(binary a[], binary b[])
@@ -17,7 +17,7 @@ procedure multiply(binary a[], binary b[])
         p := p + c[j]
     return integer p
     
-procedure division algorithm(integer a, integer d)
+procedure division(integer a, integer d)
     q := 0
     r := |a|
     while r >= d
