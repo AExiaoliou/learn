@@ -1,6 +1,7 @@
 procedure base b expansion(n, b: integer and b > 1)
     q := n
     k := 0
+    a is an array
     while q != 0
         a[k] := q mod b
         q := q div b
