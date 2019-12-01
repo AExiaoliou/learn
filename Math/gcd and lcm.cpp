@@ -1,7 +1,7 @@
 //input a, b
 //base ver.
 int gcd(int a, int b){
-    while(b != 0)}
+    while(b != 0){
         a = b;
         b = a % b;
     }
