@@ -1,11 +1,12 @@
 //input a, b
 //base ver.
 int gcd(int a, int b){
-    while(b != 0){
+    int tmp;
+    while((tmp = a % b) != 0){
         a = b;
-        b = a % b;
+        b = tmp;
     }
-    return a;
+    return b;
 }
 
 //recursion ver.
