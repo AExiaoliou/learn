@@ -11,7 +11,13 @@
 - vi > vim > helix
 - top > btop
 
+## env switch
 
+- python: pyenv conda
+- node: nvm
+- php: phpbrew
+- rust: just use rustup
+- 
 
 ## secure
 
@@ -26,3 +32,7 @@
 - 
 
 ## wsl
+
+
+## 哈哈大笑了
+- genact
