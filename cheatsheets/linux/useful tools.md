@@ -5,19 +5,23 @@
 - grep|ack > ripgrep
 - ls > exa
 
-
 ## better tools
 
 - vi > vim > helix
 - top > btop
+- cat > bat https://github.com/sharkdp/bat
 
-## env switch
+## useful tools
+- ncdu https://github.com/rofl0r/ncdu provides a fast way to see what directories are using your disk space
+- dust https://github.com/bootandy/dust  du + rust = dust. Like du but more intuitive.
+- fastfetch https://github.com/fastfetch-cli/fastfetch fetch system info
 
-- python: pyenv conda
+## env swithcher
+
+- python: pyenv conda pipx pdm
 - node: nvm
 - php: phpbrew
 - rust: just use rustup
-- 
 
 ## secure
 
