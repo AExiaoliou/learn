@@ -7,9 +7,9 @@
 
 ## better tools
 
-- vi > vim > helix
-- top > btop
-- cat > bat https://github.com/sharkdp/bat
+- vi -> vim -> helix
+- top -> btop
+- cat -> bat https://github.com/sharkdp/bat
 
 ## useful tools
 - ncdu https://github.com/rofl0r/ncdu provides a fast way to see what directories are using your disk space
@@ -18,7 +18,7 @@
 
 ## env swithcher
 
-- python: pyenv conda pipx pdm
+- python: pyenv conda pipx pdm uv
 - node: nvm
 - php: phpbrew
 - rust: just use rustup
