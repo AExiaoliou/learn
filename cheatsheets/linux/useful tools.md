@@ -15,6 +15,7 @@
 - ncdu https://github.com/rofl0r/ncdu provides a fast way to see what directories are using your disk space
 - dust https://github.com/bootandy/dust  du + rust = dust. Like du but more intuitive.
 - fastfetch https://github.com/fastfetch-cli/fastfetch fetch system info
+- zellij https://github.com/zellij-org/zellij
 
 ## env swithcher
 
@@ -22,6 +23,7 @@
 - node: nvm
 - php: phpbrew
 - rust: just use rustup
+- go: gvm
 
 ## secure
 
